@@ -4,10 +4,10 @@ import { Modal, Button } from 'react-bootstrap';
 const SuccessModal = ({ show, onHide, data }) => (
   <Modal show={show} onHide={onHide}>
     <Modal.Header closeButton>
-      <Modal.Title>All Validations have passed!</Modal.Title>
+      <Modal.Title>
+        All Validations have passed! <span role="img" aria-label="party">🎉</span></Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      Woohoo, all the entries are valid!<br />
       Form Values:<br />
       <code>
         {JSON.stringify(data, null, 2)}
